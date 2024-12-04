@@ -1,0 +1,32 @@
+#whole-page {
+    display: grid;
+    font-family: "Radley", serif;
+}
+
+#header {
+    text-align: center;
+    font-size: 100px;
+}
+
+#contact-info {
+    text-align: center;
+
+    & span {
+        margin: 110px;
+    }
+}
+
+#middle-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 30px;
+}
+
+li {
+    text-align: center;
+    margin: 20px;
+}
