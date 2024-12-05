@@ -16,7 +16,7 @@ body {
 
 #subheaders {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
  h2 {
@@ -30,20 +30,35 @@ body {
     margin-top: 20px;
 }
 
-#middle-section {
+#home-middle-section {
     display: flex;
     justify-content: space-between;
 }
 
+#bio-middle-section {
+    display: none;
+}
+
+#acting-middle-section {
+    display: none;
+}
+
+#plays-middle-section {
+    display: none;
+}
+
+#press-middle-section {
+    display: none;
+}
+
 button {
-    display: block;
     margin: 30px;
     padding: 7px 35px;
     font: 300 150% langdon;
     background: transparent;
     border: 1px solid black;
     cursor: pointer;
-    width: 400px;
+    width: 220px;
     opacity: 1;
     transition: 0.3s;
 }
@@ -54,7 +69,8 @@ button:hover {
 }
 
 #button-menu {
-    align-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #left-img {

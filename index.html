@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id="whole-page">
-        <header>
+        <header onclick="renderMiddleSection('home-middle-section');">
             <h1 id="header">Ric Siler</h1>
             <div id="subheaders">
                 <h2>Actor</h2>
@@ -23,15 +23,47 @@
                 <i class="fa fa-external-link"></i>
             </a>
         </div>
-        <div id="middle-section">
-            <img id="left-img" src="assets/dad_1.png" width="400px" height="500px"/>
-            <div id="button-menu">
-                <button type="button" onclick="document.location.href='bio'">Bio</button>
-                <button type="button" onclick="document.location.href='acting'">Acting</button>
-                <button type="button" onclick="document.location.href='plays'">Plays</button>
-                <button type="button" onclick="document.location.href='press'">Press</button>
-            </div>
+        <div id="button-menu">
+            <button type="button" onclick="renderMiddleSection('bio-middle-section');">Bio</button>
+            <button type="button" onclick="renderMiddleSection('acting-middle-section');">Acting</button>
+            <button type="button" onclick="renderMiddleSection('plays-middle-section');">Plays</button>
+            <button type="button" onclick="renderMiddleSection('press-middle-section');">Press</button>
+        </div>
+        <div id="home-middle-section" class="mainarea">
+            <img id="left-img" src="assets/dad_2.png" width="400px" height="500px"/>
+            <img id="center-img" src="assets/dad_1.png" width="400px" height="500px"/>
             <img id="right-img" src="assets/dad_2.png" width="400px" height="500px"/>
+        </div>
+        <div id="bio-middle-section" class="mainarea">
+            <img id="left-img" src="assets/dad_2.png" width="400px" height="500px"/>
+            <div id="bio-text">
+                <p>
+                    When I told my parents that I was going to move from West Virginia to New York, at the ripe old
+                    age of 33, to pursue my dream of acting, my mother said: 'You're going to be a writer.'
+                </p>
+                <p>
+                    I'm not sure what she based that on because I hadn't been seriously applying myself as a writer
+                    up to that point, but my father always said she was 'witchy'.
+                </p>
+            </div>
+        </div>
+        <div id="acting-middle-section" class="mainarea">
+            <p>lalalahehehoho</p>
+        </div>
+        <div id="plays-middle-section" class="mainarea">
+            <p>glugluglug</p>
+        </div>
+        <div id="press-middle-section" class="mainarea">
+            <p>wahoooooo</p>
         </div>
     </div>
 </body>
+<script>
+    function renderMiddleSection(sectionId) {
+        document
+            .querySelectorAll(`.mainarea:not(#${sectionId})`)
+            .forEach((section) => section.style.display = 'none')
+        
+        document.getElementById(sectionId).style.display = 'flex'
+    }
+</script>
