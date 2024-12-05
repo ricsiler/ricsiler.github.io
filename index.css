@@ -10,21 +10,24 @@ body {
 #header {
     text-align: center;
     font-size: 75px;
-    margin-bottom: 20px;
+    margin-bottom: -5px;
     margin-top: 10px;
 }
 
+#subheaders {
+    display: flex;
+    justify-content: space-evenly;
+}
+
  h2 {
-    margin-top: 5px;
-    text-align: center;
+    margin: 5px;
  }
 
 #contact-info {
-    text-align: center;
-
-    & span {
-        margin: 110px;
-    }
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #middle-section {
@@ -60,4 +63,8 @@ button:hover {
 
 #right-img {
     margin-right: 30px
+}
+
+a {
+    text-decoration: none;
 }
