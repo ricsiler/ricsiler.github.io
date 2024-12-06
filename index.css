@@ -32,7 +32,7 @@ body {
 
 #home-middle-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #bio-middle-section {
@@ -115,9 +115,33 @@ a:visited {
 }
 
 #text-area {
-    margin: 10 10 10 30;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 h3 {
     text-align: center;
+}
+
+.bio-left-img {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#happy-pic {
+    margin-left: 125px;
+}
+
+.play {
+    display: flex;
+    justify-content: space-evenly;
+
+    p {
+        width: 600px;
+        margin: 20px;
+    }
+
+    img {
+        margin: 20px;
+    }
 }

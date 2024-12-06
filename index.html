@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,11 +32,13 @@
         </div>
         <div id="home-middle-section" class="mainarea">
             <img id="left-img" src="assets/dad_2.png" width="400px" height="500px"/>
-            <img id="center-img" src="assets/dad_1.png" width="400px" height="500px"/>
-            <img id="right-img" src="assets/dad_2.png" width="400px" height="500px"/>
+            <img id="right-img" src="assets/dad_1.png" width="400px" height="500px"/>
         </div>
         <div id="bio-middle-section" class="mainarea">
-            <img id="left-img" src="assets/dad_2.png" width="400px" height="500px"/>
+            <div id="image-area">
+                <img class="bio-left-img" src="assets/bad.jpeg" width="350px" height="400px"/>
+                <img class="bio-left-img" id="happy-pic" src="assets/happy.png" width="300px" height="400px" />
+            </div>
             <div id="text-area">
                 <p>
                     When I told my parents that I was going to move from West Virginia to New York, at the ripe old
@@ -50,7 +53,7 @@
                     Studio, doing many showcase productions, the usual. Then I met my wife in one of these
                     showcase productions, and we eventually had a child, which put the acting on hold as we took a
                     sabbatical to see to raising our daughter. Then I saw an ad in Backstage for auditions for a
-                    production of <i>The Trip to Bountiful</i>i. All the parts were regional and the men were all in my age
+                    production of <i>The Trip to Bountiful</i>. All the parts were regional and the men were all in my age
                     range, so I had to do it. Since I had no monologue that was appropriate, I decided to write one
                     based on my grandfather, who was a farmer in Kentucky.
                 </p>
@@ -251,17 +254,39 @@
             </div>
             <div id="accompanying-images">
                 <img src="assets/makeup.jpg" width="400px" height="500px"/>
-                <img src="assets/makeup.jpg" width="400px" height="500px"/>
+                <img src="assets/finger.jpeg" width="400px" height="500px"/>
             </div>
         </div>
         <div id="plays-middle-section" class="mainarea">
-            <a href="assets/ric_siler_writing_resume.pdf" download="Ric_Siler_Writing_Resume" target="_blank">
-                Download
-                <i class="fa fa-download"></i>
-            </a>
+            <div class="play">
+                <img src="assets/talking.jpeg" width="500px" height="350px" />
+                <p>
+                    <b>Name of the Play</b>
+                    <br/>
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+                </p>
+                <a href="assets/ric_siler_writing_resume.pdf" download="Ric_Siler_Writing_Resume" target="_blank">
+                    Download full resume
+                    <i class="fa fa-download"></i>
+                </a>
+            </div>
+            <div class="play">
+                <p>
+                    <b>Name of the Play</b>
+                    <br/>
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+                </p>
+                <img src="assets/talking.jpeg" width="500px" height="350px" />
+            </div>
         </div>
         <div id="press-middle-section" class="mainarea">
-            <img id="left-img" src="assets/dad_2.png" width="400px" height="500px"/>
+            <img src="assets/Siler_Ric_FP_ret.JPG" width="600px" height="400px"/>
             <div id="text-area">
                 <p>
                     'Like A Sack of Potatoes' "masterfully written . . . a character with real depth . . . who nevertheless possesses an intelligence and sensitivity that belies the Hillbilly stereotype" 4 Star Review ★★★★, North West End UK
@@ -278,7 +303,11 @@
         document
             .querySelectorAll(`.mainarea:not(#${sectionId})`)
             .forEach((section) => section.style.display = 'none')
-        
-        document.getElementById(sectionId).style.display = 'flex'
+
+        if (sectionId === 'plays-middle-section') {
+            document.getElementById(sectionId).style.display = 'block'
+        } else {
+            document.getElementById(sectionId).style.display = 'flex'
+        }
     }
 </script>
