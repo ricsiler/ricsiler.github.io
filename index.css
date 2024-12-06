@@ -41,6 +41,31 @@ body {
 
 #acting-middle-section {
     display: none;
+    justify-content:space-evenly;
+
+    & td {
+        width: 250px;
+    }
+
+    & tr:nth-child(odd) {
+        background-color: #cdcfd1;
+    }
+
+    & a {
+        float:inline-end;
+    }
+
+    & #list-o-acting-gigs {
+        width: 50%;
+    }
+
+    & #accompanying-images {
+        width: 25%;
+
+        & img {
+            margin-top: 50px;
+        }
+    }
 }
 
 #plays-middle-section {
@@ -64,7 +89,7 @@ button {
 }
 
 button:hover {
-    /* background-color: #f2f5fa; */
+    background-color: #f2f5fa;
     opacity: 0.6;
 }
 
@@ -83,4 +108,16 @@ button:hover {
 
 a {
     text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#text-area {
+    margin: 10 10 10 30;
+}
+
+h3 {
+    text-align: center;
 }
