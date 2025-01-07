@@ -2,6 +2,8 @@ html {
     overflow-x: hidden;
 }
 
+ul { list-style-type: none; }
+
 #whole-page {
     display: grid;
     font-family: "Radley", serif;
@@ -13,14 +15,29 @@ body {
 
 #header {
     text-align: center;
-    font-size: 75px;
     margin-bottom: -5px;
     margin-top: 10px;
+
+    @media only screen and (min-width: 1224px) {
+        font-size: 100px;
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        font-size: 12em;
+    }
 }
 
 #subheaders {
     display: flex;
     justify-content: center;
+
+    @media only screen and (min-width: 1224px) {
+        font-size: 20px;
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        font-size: 2em;
+    }
 }
 
  h2 {
@@ -32,6 +49,14 @@ body {
     justify-content: space-evenly;
     margin-bottom: 20px;
     margin-top: 20px;
+
+    @media only screen and (min-width: 1224px) {
+        font-size: 20px;
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        font-size: 2em;
+    }
 }
 
 #home-middle-section {
@@ -44,8 +69,8 @@ body {
        display: contents;
 
        & img {
-        margin-top: 5%;
-        margin-left: 30%;
+            margin-top: 5%;
+            margin-left: 30%;
        }
     }
 }
@@ -148,12 +173,23 @@ h3 {
     display: flex;
     justify-content: space-evenly;
 
-    p {
-        width: 600px;
-        margin: 20px;
+    .play-description {
+        max-width: 50%;
     }
 
     img {
         margin: 20px;
+        max-width: 50%;
+    }
+}
+
+#writing-download {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 10%;
+
+    a {
+        margin-top: 1%;
     }
 }

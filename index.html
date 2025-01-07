@@ -5,7 +5,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="user-scalable=0;"/>
 </head>
 <body>
     <div id="whole-page">
@@ -26,10 +25,10 @@
             </a>
         </div>
         <div id="button-menu">
+            <button type="button" onclick="renderMiddleSection('home-middle-section');">Home</button>
             <button type="button" onclick="renderMiddleSection('bio-middle-section');">Bio</button>
             <button type="button" onclick="renderMiddleSection('acting-middle-section');">Acting</button>
-            <button type="button" onclick="renderMiddleSection('plays-middle-section');">Plays</button>
-            <button type="button" onclick="renderMiddleSection('press-middle-section');">Press</button>
+            <button type="button" onclick="renderMiddleSection('plays-middle-section');">Writing</button>
         </div>
         <div id="home-middle-section" class="mainarea">
             <img id="left-img" src="assets/dad_2.png" width="400px" height="500px"/>
@@ -259,42 +258,72 @@
             </div>
         </div>
         <div id="plays-middle-section" class="mainarea">
-            <div class="play">
-                <img src="assets/talking.jpeg" width="500px" height="350px" />
-                <p>
-                    <b>Name of the Play</b>
-                    <br/>
-                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-                </p>
+            <div id="writing-download">
+                <h2>Some recent highlights</h2>
                 <a href="assets/ric_siler_writing_resume.pdf" download="Ric_Siler_Writing_Resume" target="_blank">
-                    Download full resume
+                    Download full writing resume
                     <i class="fa fa-download"></i>
                 </a>
             </div>
             <div class="play">
-                <p>
-                    <b>Name of the Play</b>
-                    <br/>
-                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-                </p>
-                <img src="assets/talking.jpeg" width="500px" height="350px" />
+                <img src="assets/sack-of-potatoes.jpeg" width="500px" height="500px" />
+                <div class="play-description">
+                    <h3>Like a Sack of Potatoes</h3>
+                    <div>
+                        Some guy does something and kills someone yadda yadda Some guy does something and kills someone yadda yadda Some guy does something and kills someone yadda yadda Some guy does something and kills someone yadda yadda Some guy does something and kills someone yadda yadda Some guy does something and kills someone yadda yadda 
+                    </div>
+                    </br>
+                    <div>
+                        "Masterfully written . . . a character with real depth . . . who nevertheless possesses an intelligence and sensitivity that belies the Hillbilly stereotype"
+                        </br>
+                        <a href="https://northwestend.com/like-a-sack-of-potatoes-thespace-on-the-mile/" target="_blank">
+                            <b>4 Star Review ★★★★, North West End UK</b>
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <h4>Production history</h4>
+                        <ul>
+                            <li><b>Edinburgh Fringe Festival</b>, August 2022, Edinburgh, Scotland</li>
+                            <li><b>Voices From the Fringe, Byrdcliff Theatre</b>, July 2022, Woodstock, NY</li>
+                            <li><b>Woodstock Fringe, Voices From the Fringe</b>, <i>Reading</i> October 2021, Remote</li>
+                            <li><b>Midtown International Theatre Festival</b>, March 2016, NYC</li>
+                            <li><b>Shades Repertory Theatre</b>, October 2015, Haverstraw, NY</li>
+                            <li><b>One Man Talking Festival, E.A.T.</b>, March 2012, NYC</li>
+                            <li><b>Woodstock Fringe Festival</b>, <i>Staged reading</i>, August 2011, Woodstock, NY</li>
+                            <li><b>Woodstock Fringe, Voices From the Fringe</b>, <i>Reading</i>, May 2011, NYC</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="press-middle-section" class="mainarea">
-            <img src="assets/Siler_Ric_FP_ret.JPG" width="600px" height="400px"/>
-            <div id="text-area">
-                <p>
-                    'Like A Sack of Potatoes' "masterfully written . . . a character with real depth . . . who nevertheless possesses an intelligence and sensitivity that belies the Hillbilly stereotype" 4 Star Review ★★★★, North West End UK
-                </p>
-                <p>
-                    'Old Hickory' “I have a soft spot for one person shows that attempt to expose deeply felt, raw extreme motions and situations of human life. I like it even more when the writer/performer mixes wit with a descriptive power that brings us directly into the place where these emotions live. . . Siler's Southern storytelling voice rings true . . . This is a must see show . . .”  New York Theatre Wire
-                </p>
+            <div class="play">
+                <img src="assets/old-hickory.JPG" width="400px" height="600px" />
+                <div class="play-description">
+                    <h3>Old Hickory</h3>
+                    <div>
+                        Some guy does something and kills someone yadda yadda Some guy does something and kills someone yadda yadda Some guy does something and kills someone yadda yadda Some guy does something and kills someone yadda yadda Some guy does something and kills someone yadda yadda Some guy does something and kills someone yadda yadda 
+                    </div>
+                    </br>
+                    <div>
+                        “I have a soft spot for one person shows that attempt to expose deeply felt, raw extreme motions and situations of human life. I like it even more when the writer/performer mixes wit with a descriptive power that brings us directly into the place where these emotions live. . . Siler's Southern storytelling voice rings true . . . This is a must see show . . .”
+                        </br>
+                        <a href="https://woodstockfringe.org/ef---theatre-wire.html#/" target="_blank">
+                            <b>New York Theatre Wire</b>
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <h4>Production history</h4>
+                        <ul>
+                            <li><b>Shades Repertory Theatre</b>, January 2015, Haverstraw, NY</li>
+                            <li><b>Snowballs Theatre Festival</b>, January 2013, NYC</li>
+                            <li><b>Nyack Village Theatre</b>, February 2012, Nyack, NY</li>
+                            <li><b>Woodstock Fringe Festival</b>, <i>World premiere</i>, August 2010, Woodstock, NY</li>
+                            <li><b>One Man Talking Festival, E.A.T.</b>, April 2010, NYC</li>
+                            <li><b>Woodstock Fringe, Voices From the Fringe</b>, <i>Reading</i>, March 2010, NYC</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
