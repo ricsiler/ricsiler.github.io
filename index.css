@@ -16,7 +16,7 @@ body {
 
 #subheaders {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
  h2 {
@@ -30,31 +30,72 @@ body {
     margin-top: 20px;
 }
 
-#middle-section {
+#home-middle-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+#bio-middle-section {
+    display: none;
+}
+
+#acting-middle-section {
+    display: none;
+    justify-content:space-evenly;
+
+    & td {
+        width: 250px;
+    }
+
+    & tr:nth-child(odd) {
+        background-color: #cdcfd1;
+    }
+
+    & a {
+        float:inline-end;
+    }
+
+    & #list-o-acting-gigs {
+        width: 50%;
+    }
+
+    & #accompanying-images {
+        width: 25%;
+
+        & img {
+            margin-top: 50px;
+        }
+    }
+}
+
+#plays-middle-section {
+    display: none;
+}
+
+#press-middle-section {
+    display: none;
 }
 
 button {
-    display: block;
     margin: 30px;
     padding: 7px 35px;
     font: 300 150% langdon;
     background: transparent;
     border: 1px solid black;
     cursor: pointer;
-    width: 400px;
+    width: 220px;
     opacity: 1;
     transition: 0.3s;
 }
 
 button:hover {
-    /* background-color: #f2f5fa; */
+    background-color: #f2f5fa;
     opacity: 0.6;
 }
 
 #button-menu {
-    align-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #left-img {
@@ -67,4 +108,40 @@ button:hover {
 
 a {
     text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#text-area {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.bio-left-img {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#happy-pic {
+    margin-left: 125px;
+}
+
+.play {
+    display: flex;
+    justify-content: space-evenly;
+
+    p {
+        width: 600px;
+        margin: 20px;
+    }
+
+    img {
+        margin: 20px;
+    }
 }
