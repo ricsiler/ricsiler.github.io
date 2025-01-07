@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 #whole-page {
     display: grid;
     font-family: "Radley", serif;
@@ -31,8 +35,19 @@ body {
 }
 
 #home-middle-section {
-    display: flex;
-    justify-content: space-evenly;
+    @media only screen and (min-width: 1224px) {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+       display: contents;
+
+       & img {
+        margin-top: 5%;
+        margin-left: 30%;
+       }
+    }
 }
 
 #bio-middle-section {
@@ -77,7 +92,7 @@ body {
 }
 
 button {
-    margin: 30px;
+    margin: 2%;
     padding: 7px 35px;
     font: 300 150% langdon;
     background: transparent;
@@ -108,10 +123,7 @@ button:hover {
 
 a {
     text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
+    color: black;
 }
 
 #text-area {
