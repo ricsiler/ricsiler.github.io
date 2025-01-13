@@ -336,8 +336,14 @@
 
         if (sectionId === 'plays-middle-section') {
             document.getElementById(sectionId).style.display = 'block'
-        } else {
+        } else if (sectionId === 'acting-middle-section') {
             document.getElementById(sectionId).style.display = 'flex'
+        } else {
+            if (window.screen.width > 1223) {
+                document.getElementById(sectionId).style.display = 'flex'
+            } else {
+                document.getElementById(sectionId).style.display = 'contents'
+            }
         }
     }
 </script>
