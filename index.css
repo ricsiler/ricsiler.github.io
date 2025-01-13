@@ -49,6 +49,10 @@ body {
     justify-content: space-evenly;
     margin-bottom: 20px;
     margin-top: 20px;
+    
+    a {
+        max-width: 40%;
+    }
 
     @media only screen and (min-width: 1224px) {
         font-size: 20px;
@@ -190,4 +194,8 @@ h3 {
     a {
         margin-top: 1%;
     }
+}
+
+.contact-piece {
+    max-width: 25%;
 }
